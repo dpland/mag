@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Mag Data Viewer{% endblock %}
+
+{% block content %}
+<div class="welcome-box">
+    <h1>你好 (Hello), {{ username }}!</h1>
+    <p style="margin: 1rem 0; color: #555;">Welcome to the Magnetometer Data Viewer</p>
+    <p style="margin: 1rem 0; color: #777; font-size: 14px;">You are successfully logged in.</p>
+    <button class="logout-btn" onclick="window.location.href='{{ url_for('logout') }}'">Logout</button>
+</div>
+{% endblock %}
